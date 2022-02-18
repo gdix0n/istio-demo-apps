@@ -95,6 +95,8 @@ spec:
         readiness.status.sidecar.istio.io/applicationPorts: ""
         proxy.istio.io/config: |
           tracing:
+            zipkin:
+              address: jaeger-collector.istio-system:9411
             sampling: 10
             custom_tags:
               http.header.portal:
@@ -174,6 +176,8 @@ spec:
         readiness.status.sidecar.istio.io/applicationPorts: ""
         proxy.istio.io/config: |
           tracing:
+            zipkin:
+              address: jaeger-collector.istio-system:9411
             sampling: 10
             custom_tags:
               http.header.portal:
@@ -240,6 +244,8 @@ spec:
         readiness.status.sidecar.istio.io/applicationPorts: ""
         proxy.istio.io/config: |
           tracing:
+            zipkin:
+              address: jaeger-collector.istio-system:9411
             sampling: 10
             custom_tags:
               http.header.portal:
@@ -319,6 +325,8 @@ spec:
         readiness.status.sidecar.istio.io/applicationPorts: ""
         proxy.istio.io/config: |
           tracing:
+            zipkin:
+              address: jaeger-collector.istio-system:9411
             sampling: 10
             custom_tags:
               http.header.portal:
@@ -461,6 +469,8 @@ spec:
         readiness.status.sidecar.istio.io/applicationPorts: ""
         proxy.istio.io/config: |
           tracing:
+            zipkin:
+              address: jaeger-collector.istio-system:9411
             sampling: 10
             custom_tags:
               http.header.portal:
